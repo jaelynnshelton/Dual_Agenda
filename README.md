@@ -1,25 +1,36 @@
 # Dual_Agenda
 
-This project is based on the Dual Agenda layered high level architectural design.
+DUAL AGENDA
 
-The system includes several layers that work together.
+A centralized scheduling application for managing
+academic, professional, and personal responsibilities.
 
-Presentation Layer:
-Collects user input,
-Displays calendars and schedules,
-Displays alerts,
-Sends requests to service layer.
 
-Service Layer:
-AuthenticationService,
-ScheduleService,
-EventValidationService,
-CategoryFilterService,
-NotificationService,
-TaskCompletionService,
-EventSelectionService.
+ABOUT
 
-Data Layer:
-User Information,
-Event Input,
-User Login.
+Dual Agenda is a software engineering project designed
+to help users organize different areas of their lives
+within one scheduling system...
+
+KEY FEATURES
+
+✓ Multi-category scheduling
+✓ Event management
+✓ Event validation
+✓ Category filtering
+✓ Task completion
+✓ Notifications
+✓ User authentication
+
+TECHNOLOGIES
+
+Java | JavaFX | CSS | MySQL | GitHub | GitHub Actions
+
+ARCHITECTURE
+
+Presentation Layer
+        ↓
+Service Layer
+        ↓
+Data Layer
+        ↓
