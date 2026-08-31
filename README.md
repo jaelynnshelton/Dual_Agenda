@@ -1,222 +1,201 @@
-Dual Agenda
+DUAL AGENDA
+A scheduling app for managing school, work, and personal plans in one place.
 
-Dual Agenda is a scheduling app that brings school, work, and personal plans together in one place.
+📌 About the Project
+Dual Agenda is a scheduling application designed to bring academic, professional, and personal schedules together in one system.
 
+The application allows users to create and manage events and tasks, organize them by category, and keep track of upcoming activities.
 
-Overview
-
-Keeping up with classes, work, appointments, and everyday tasks can mean using several different calendars and             reminder apps. Dual Agenda is designed to put those schedules into one system.
-
-The project focuses on organizing events by category and giving users a simple way to manage their schedules and           tasks.
-
- The application is being developed as a software engineering project, with a focus on Java, application                    architecture, database design, and Agile development.
+The project is being developed as part of my software engineering coursework, giving me the opportunity to apply programming, database, architecture, and Agile development concepts to a larger project.
 
 
-Why I Built This
+💡 Why I Built This
+Managing school, work, appointments, and personal plans can mean using multiple calendars and reminder apps.
 
-The idea behind Dual Agenda came from the difficulty of keeping different parts of a schedule organized in                 separate places.
+I wanted to explore the idea of having these schedules in one place while still being able to separate and filter them by category.
 
-Instead of having one calendar for school, another for work, and another for personal plans, the goal is to have           them together while still being able to separate and filter them when needed.
+Dual Agenda also gives me the opportunity to apply what I've learned in my software engineering courses to a project that is larger than an individual programming assignment.
 
-It also gave me a chance to take what I've learned in my software engineering classes and apply it to a larger             project instead of working on individual programming assignments.
-
-
-Features
-
-Create and manage scheduled events
-
-Separate events into academic, professional, and personal categories
-
-Filter events by category
-
-Validate event information
-
-Keep track of completed tasks
-
-Support notifications and reminders
-
-User authentication and login
-
+✨ Features
+Scheduling
+Create and manage events
+View calendars and schedules
 Select and interact with scheduled events
+Detect overlapping events
+Organization
+Academic, professional, and personal categories
+Filter events by category
+Manage tasks and completed activities
+User Features
+User registration and login
+Event validation
+Notifications and reminders
+Task completion tracking
+🛠️ Technologies
+Technology	Used For
+Java	Application development
+JavaFX	User interface
+CSS	Interface styling
+MySQL	Database
+GitHub	Version control and collaboration
+GitHub Actions	CI/CD
 
+🏗️ Architecture
+Dual Agenda uses a layered architecture to separate the user interface, application functionality, and data management.
 
-Technologies
-
-Java — Application development
-
-JavaFX — User interface
-
-CSS — Interface styling
-
-MySQL — Database
-
-GitHub — Version control and collaboration
-
-GitHub Actions — CI/CD
-
-
-
-Project Structure
-Dual Agenda is organized into three main layers:
-
-        Presentation Layer
-                |
-                v
-        Service Layer
-                |
-                v
-        Data Layer
-                |
-                v
-             MySQL
-
-
-
+                    ┌──────────────────────┐
+                    │  Presentation Layer  │
+                    │                      │
+                    │      JavaFX UI       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    Service Layer     │
+                    │                      │
+                    │  Application Logic   │
+                    │  Event Management    │
+                    │  Validation          │
+                    │  Notifications       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │      Data Layer      │
+                    │                      │
+                    │   Database Access    │
+                    │    Data Storage      │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                         ┌──────────┐
+                         │  MySQL   │
+                         └──────────┘
 Presentation Layer
 
-This is the part of the application the user interacts with. It handles things such as displaying schedules,               collecting information, and showing notifications.
+Handles everything the user interacts with, including:
 
-
-
+Calendar and schedule displays
+Event and task input
+Notifications
+User interface controls
 Service Layer
 
-The service layer handles the main functions of the application.
+Handles the application's main functionality.
 
-Current services include:
+Current services:
 
-                                        AuthenticationService
-
-                                        ScheduleService
-
-                                        EventValidationService
-
-                                        CategoryFilterService
-
-                                        NotificationService
-
-                                        TaskCompletionService
-
-                                        EventSelectionService
-                                        
-
+AuthenticationService
+ScheduleService
+EventValidationService
+CategoryFilterService
+NotificationService
+TaskCompletionService
+EventSelectionService
 Data Layer
 
-The data layer handles information that needs to be stored and retrieved, including users, events, and scheduling          information.
+Handles storing and retrieving application data.
 
+This includes information such as:
 
+Users
+Events
+Tasks
+Categories
+Scheduling information
 
-Screenshots
-
+🖥️ Screenshots
 Screenshots will be added as the application interface is completed.
 
-Planned screenshots:
+Planned Screenshots
+Screen	Description
+Dashboard	Main scheduling view
+Calendar	View upcoming events
+Event Creation	Create and manage events
+Categories	Filter events by category
+Notifications	View reminders and alerts
 
-Main dashboard/calendar
-
-Event creation
-
-Category filtering
-
-Notifications/reminders
-
-
-
-My Contributions
-
-I have worked on the overall structure and planning of the Dual Agenda project, including:
-
-Designing the application's layered architecture
-
-Planning the responsibilities of the service layer
-
-Working on scheduling and event functionality
-        
-Working on event validation and category filtering
-
-Contributing to authentication, notifications, and task completion
-
-Working on project requirements and documentation
-
-Using GitHub for version control
-
-Taking part in Agile planning and sprint work
-
-Applying software engineering principles to the project
-
-        
-
-Software Engineering Concepts
-
-This project has given me experience working with:
-
-Object-oriented programming
-
-Layered architecture
-
-Separation of responsibilities
-
-Requirements analysis
-
-Database design
-
-Input validation
-
-User authentication
-
-Agile development
-
-Sprint planning
-
-Git and GitHub
-
-CI/CD
-
-SOLID principles
-
-        
-
-Project Documentation
-
-More detailed information about the project can be found in the documentation folder.
+👩‍💻 My Contributions
+I have contributed to the planning, structure, and development of Dual Agenda.
 
 Architecture
+Designed the layered application structure
+Planned service responsibilities
+Worked on separation of responsibilities
+Application Development
+Scheduling and event functionality
+Event validation
+Category filtering
+Authentication
+Notifications
+Task completion
+Project Development
+Requirements planning
+Project documentation
+Sprint planning
+Agile development
+GitHub version control
+CI/CD workflow
 
-Requirements
+📚 Software Engineering Concepts
+Through this project, I have applied:
 
-Agile Methods
+Object-Oriented Programming
+Layered Architecture
+Separation of Responsibilities
+Requirements Analysis
+Database Design
+Input Validation
+User Authentication
+Agile Development
+Sprint Planning
+Git & GitHub
+CI/CD
+SOLID Principles
 
-Sprint Backlog
+🔄 Agile Methods
+Dual Agenda is being developed using an Agile approach.
 
-Progress Reports
+Development is broken into smaller features and tasks that can be planned, developed, tested, and improved throughout the project.
 
-        
+Current User Functionality
+User can log into the system
+User can view calendars and schedules
+User can create and manage events
+User can create and manage tasks
+System detects overlapping events
+User can mark tasks as completed
+User can filter events by category
+System provides alerts and notifications
 
-Project Status / IN DEVELOPMENT
+📄 Project Documentation
+Additional project documentation is available in the docs folder.
 
-Dual Agenda is currently being developed as part of my software engineering coursework. The project is still being         worked on, so some planned features and documentation are not finished yet.
+Document	Description
+SRS	Software Requirements Specification
+Architecture	Application architecture documentation
+Agile Methods	Agile development approach
+Sprint Backlog	Project tasks and sprint planning
+Progress Reports	Development progress
+Database / ERD	Database structure and relationships
 
-        
+🚧 Project Status
+In Development
 
-Future Improvements
+Dual Agenda is currently being developed as part of my software engineering coursework.
 
-Improving the calendar and overall interface
+The application is still being built, so some features, documentation, and testing are still in progress.
 
-Expanding reminders and notifications
+🔮 Future Improvements
+Improve the calendar interface
+Expand reminders and notifications
+Add additional filtering and sorting options
+Expand database functionality
+Add automated testing
+Improve the GitHub Actions workflow
+Deploy the application
 
-Adding more filtering and sorting options
+🎯 Project Goal
+The goal of Dual Agenda is to create a practical scheduling application while applying software engineering concepts throughout the development process.
 
-Expanding database functionality
-
-Adding automated tests
-
-Improving the GitHub Actions workflow
-
-Deploying the application
-
-Adding more screenshots and a demo of the finished application
-
-                
-
-What I'm Working Toward
-
-The goal is to turn Dual Agenda into a complete scheduling application while continuing to improve my skills in            software development, databases, application design, and working with Git and GitHub.
+The project will continue to evolve as new features are developed, tested, and refined.
