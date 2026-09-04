@@ -12,19 +12,30 @@ public class DualAgendaApp {
         EventService eventService = new EventService();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("=== Add a New Event ===");
+        boolean addingEvents = true;
 
-        System.out.print("Event title: ");
-        String title = scanner.nextLine();
+        while (addingEvents) {
+            System.out.println("\n=== Add a New Event ===");
 
-        System.out.print("Event description: ");
-        String description = scanner.nextLine();
+            System.out.print("Event title: ");
+            String title = scanner.nextLine();
 
-        System.out.print("Category (school/work/personal): ");
-        String category = scanner.nextLine();
+            System.out.print("Event description: ");
+            String description = scanner.nextLine();
 
-        Event newEvent = new Event(title, description, null, category);
-        eventService.addEvent(newEvent);
+            System.out.print("Category (school/work/personal): ");
+            String category = scanner.nextLine();
+
+            Event newEvent = new Event(title, description, null, category);
+            eventService.addEvent(newEvent);
+
+            System.out.print("\nAdd another event? (y/n): ");
+            String answer = scanner.nextLine();
+
+            if (!answer.equalsIgnoreCase("y")) {
+                addingEvents = false;
+            }
+        }
 
         System.out.println("\n=== All Events ===");
         List<Event> events = eventService.getAllEvents();
